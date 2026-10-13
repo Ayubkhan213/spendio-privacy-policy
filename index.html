@@ -1,305 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spendio - Privacy Policy</title>
-    <!-- Modern Premium Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary: #4F46E5;
-            --primary-dark: #3730A3;
-            --primary-light: #EEF2F6;
-            --text-main: #1E293B;
-            --text-muted: #64748B;
-            --bg-main: #F8FAFC;
-            --card-bg: #FFFFFF;
-            --border-color: #E2E8F0;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-main);
-            color: var(--text-main);
-            line-height: 1.7;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 760px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 50px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.03);
-        }
-
-        .header {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            background-color: #ECFDF5;
-            color: #047857;
-            padding: 6px 14px;
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            border: 1px solid #A7F3D0;
-        }
-
-        .badge-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #10B981;
-            border-radius: 50%;
-            margin-right: 8px;
-        }
-
-        h1 {
-            color: var(--text-main);
-            font-size: 32px;
-            font-weight: 800;
-            letter-spacing: -0.025em;
-            margin-bottom: 8px;
-        }
-
-        .last-updated {
-            font-size: 14px;
-            color: var(--text-muted);
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 15px;
-            color: #334155;
-            margin-bottom: 20px;
-        }
-
-        .intro {
-            font-size: 16px;
-            color: #475569;
-            border-left: 4px solid var(--primary);
-            padding-left: 16px;
-            margin: 24px 0;
-        }
-
-        h2 {
-            color: #0F172A;
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-top: 36px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid var(--border-color);
-            margin: 28px 0;
-        }
-
-        .permission-card {
-            background-color: var(--primary-light);
-            border-left: 4px solid var(--primary);
-            padding: 16px 20px;
-            border-radius: 0 12px 12px 0;
-            margin-bottom: 16px;
-        }
-
-        .permission-name {
-            font-weight: 700;
-            color: var(--primary-dark);
-            font-size: 14px;
-            letter-spacing: 0.05em;
-            margin-bottom: 4px;
-        }
-
-        .permission-desc {
-            font-size: 14px;
-            color: #475569;
-            margin-bottom: 0;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 16px 0;
-        }
-
-        ul li {
-            position: relative;
-            padding-left: 26px;
-            font-size: 15px;
-            color: #334155;
-            margin-bottom: 10px;
-        }
-
-        ul li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #10B981;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .contact-info {
-            background: #F1F5F9;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 20px;
-            border: 1px dashed var(--border-color);
-        }
-
-        .contact-info a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            margin-top: 50px;
-            font-size: 13px;
-            color: var(--text-muted);
-            text-align: center;
-        }
-
-        /* Responsive */
-        @media (max-width: 640px) {
-            body {
-                padding: 20px 10px;
-            }
-            .container {
-                padding: 30px 20px;
-                border-radius: 12px;
-            }
-            h1 {
-                font-size: 26px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spendio Privacy Policy</title>
+<style>
+  :root{
+    --bg:#F7F8FA; --surface:#FFFFFF; --ink:#141A21; --ink-soft:#4B5563;
+    --line:#E3E7EC; --accent:#0F6B5C; --accent-soft:#E6F2EF; --chip:#EEF1F4;
+    --font-display:'Lora',Georgia,serif; --font-body:'IBM Plex Sans',system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#10151B; --surface:#161C24; --ink:#EDEFF2; --ink-soft:#A4ADB8;
+      --line:#262E38; --accent:#49C9AC; --accent-soft:#17352E; --chip:#1E2630;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#10151B; --surface:#161C24; --ink:#EDEFF2; --ink-soft:#A4ADB8;
+    --line:#262E38; --accent:#49C9AC; --accent-soft:#17352E; --chip:#1E2630;
+    color-scheme: dark;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.65;}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 20px 72px;}
+  header.hero{display:flex;flex-direction:column;gap:10px;padding-bottom:28px;margin-bottom:28px;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .mark{width:34px;height:34px;border-radius:9px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:17px;flex:none;}
+  .brand-name{font-family:var(--font-display);font-weight:600;font-size:18px;letter-spacing:.2px;}
+  h1{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,5vw,38px);line-height:1.15;margin:4px 0 0;text-wrap:balance;}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+  .chip{background:var(--chip);color:var(--ink-soft);border-radius:100px;padding:5px 12px;font-size:12.5px;font-weight:500;}
+  .lede{color:var(--ink-soft);font-size:15.5px;max-width:58ch;margin-top:6px;}
+  nav.toc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:36px;}
+  nav.toc h2{font-size:12.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin:0 0 10px;font-weight:600;}
+  nav.toc ol{margin:0;padding:0;list-style:none;columns:2;column-gap:20px;}
+  nav.toc li{margin-bottom:6px;break-inside:avoid;}
+  nav.toc a{color:var(--ink);text-decoration:none;font-size:14px;}
+  nav.toc a:hover{color:var(--accent);}
+  @media (max-width:520px){ nav.toc ol{columns:1;} }
+  section{margin-bottom:34px;}
+  section h2{font-family:var(--font-display);font-size:21px;font-weight:600;margin:0 0 4px;display:flex;align-items:center;gap:10px;}
+  .num{color:var(--accent);font-family:var(--font-body);font-size:13px;font-weight:700;background:var(--accent-soft);border-radius:7px;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;flex:none;}
+  section p{margin:10px 0;color:var(--ink);}
+  section p.muted{color:var(--ink-soft);font-size:14.5px;}
+  .grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:14px;}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;}
+  .card h3{font-size:14.5px;margin:0 0 8px;display:flex;align-items:center;gap:8px;}
+  .dot{width:8px;height:8px;border-radius:50%;flex:none;}
+  .dot.local{background:#6B7280;}
+  .dot.account{background:#2563EB;}
+  .dot.synced{background:var(--accent);}
+  .card ul{margin:0;padding-left:18px;font-size:13.8px;color:var(--ink-soft);}
+  .card li{margin-bottom:4px;}
+  table.perm{width:100%;border-collapse:collapse;margin-top:14px;font-size:13.8px;}
+  table.perm th,table.perm td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);}
+  table.perm th{color:var(--ink-soft);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;}
+  table.perm td:first-child{font-weight:600;white-space:nowrap;}
+  .perm-wrap{overflow-x:auto;}
+  ul.rights{margin:10px 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:10px;}
+  ul.rights li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;}
+  .callout{background:var(--accent-soft);border:1px solid var(--accent);border-radius:12px;padding:14px 16px;font-size:14px;margin-top:10px;}
+  footer{border-top:1px solid var(--line);padding-top:22px;margin-top:44px;color:var(--ink-soft);font-size:13.5px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;}
+  footer a{color:var(--accent);text-decoration:none;}
+  a{color:var(--accent);}
+  .backtop{display:inline-block;margin-top:4px;font-size:12.5px;color:var(--ink-soft);text-decoration:none;}
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="wrap">
 
-    <div class="container">
-        <div class="header">
-            <div class="badge">
-                <span class="badge-dot"></span>
-                100% Offline & Private
-            </div>
-            <h1>Privacy Policy for Spendio</h1>
-            <p class="last-updated">Last updated: June 13, 2026</p>
-        </div>
-
-        <p class="intro">Spendio is a fully offline expense tracking and budget manager application developed by A&amp;K Tech. The application operates entirely locally on your device and does not require an internet connection.</p>
-
-        <hr>
-
-        <h2>Data Collection</h2>
-        <p>Spendio does not collect, track, or share any personal information, financial data, or usage analytics with external servers or third parties. All inputs, including your expenses, budgets, transactions, and category customizations, are stored locally on your device only.</p>
-
-        <hr>
-
-        <h2>Local Profile Setup</h2>
-        <p>Spendio does not use online user accounts or cloud authentication. When using the app, you may set up a local profile which includes a display name, currency preference, and a profile photo. This information is saved strictly within your device's local sandbox storage. We do not have access to this data, nor can we recover it if lost.</p>
-
-        <hr>
-
-        <h2>Permissions We Use</h2>
-        <p>To provide full functionality, Spendio uses the following system permissions locally. None of these transmit data off your device:</p>
-
-        <div class="permission-card">
-            <div class="permission-name">POST_NOTIFICATIONS</div>
-            <p class="permission-desc">Used to send local alerts, monthly limits, and expense reminders. No notification data is sent to any external server.</p>
-        </div>
-
-        <div class="permission-card">
-            <div class="permission-name">RECEIVE_BOOT_COMPLETED</div>
-            <p class="permission-desc">Used to restore local scheduled reminders and recurring transactions automatically when your device restarts.</p>
-        </div>
-
-        <div class="permission-card">
-            <div class="permission-name">WAKE_LOCK</div>
-            <p class="permission-desc">Used to allow the device to safely run the local background database worker (e.g. processing scheduled recurring expenses).</p>
-        </div>
-
-        <div class="permission-card">
-            <div class="permission-name">VIBRATE</div>
-            <p class="permission-desc">Used to trigger haptic feedback/vibrations for local notifications and reminder alerts.</p>
-        </div>
-
-        <div class="permission-card">
-            <div class="permission-name">CAMERA / PHOTO GALLERY</div>
-            <p class="permission-desc">Used locally to capture a new photo or select an existing image from your gallery if you choose to customize your profile picture. No image data is shared or uploaded.</p>
-        </div>
-
-        <div class="permission-card">
-            <div class="permission-name">DEVICE STORAGE (READ / WRITE)</div>
-            <p class="permission-desc">Used locally to export transaction logs (such as PDF/CSV backups) directly to your device's storage at your request. Storage permissions are requested only for user-initiated file exports.</p>
-        </div>
-
-        <hr>
-
-        <h2>Third Party Services</h2>
-        <p>Spendio does not integrate with third-party software development kits (SDKs), advertising platforms, marketing trackers, or crash analytics systems. No network calls are made to external services.</p>
-
-        <hr>
-
-        <h2>Data Security</h2>
-        <p>Because Spendio does not use online servers, passwords, or PIN locks, there is no transmission risk over public networks. All database transactions are committed directly to your device's sandboxed storage. You are in full control of your physical device security and the privacy of your local databases.</p>
-
-        <hr>
-
-        <h2>Children's Privacy</h2>
-        <p>Spendio does not collect or request data from children under the age of 13. The application is intended for individuals aged 18 and older.</p>
-
-        <hr>
-
-        <h2>Your Rights & Data Control</h2>
-        <p>Since all data remains on your physical storage, you have absolute ownership and control over it. You can permanently erase all records and settings at any time by:</p>
-        <ul>
-            <li>Clearing the application's data/cache through your Android device settings.</li>
-            <li>Uninstalling the Spendio application from your device.</li>
-        </ul>
-
-        <hr>
-
-        <h2>Changes to This Policy</h2>
-        <p>We may update this offline privacy policy from time to time. Any changes will be updated on this page with a revised date stamp.</p>
-
-        <hr>
-
-        <h2>Contact Us</h2>
-        <div class="contact-info">
-            <p>For any inquiries regarding this policy or the application's local privacy operations, please contact us at:</p>
-            <p>Email: <strong><a href="mailto:ayubkhn.aks@gmail.com">ayubkhn.aks@gmail.com</a></strong></p>
-        </div>
-
-        <div class="footer">
-            &copy; 2026 A&amp;K Tech &nbsp;&middot;&nbsp; Spendio &nbsp;&middot;&nbsp; All rights reserved.
-        </div>
+  <header class="hero">
+    <div class="brand">
+      <div class="mark">S</div>
+      <div class="brand-name">Spendio</div>
     </div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span class="chip">Effective: October 13, 2026</span>
+      <span class="chip">Developer: A&amp;K Tech</span>
+    </div>
+    <p class="lede">
+      Spendio is a personal finance app for tracking expenses, budgets, debts and
+      shared money pools. It is built offline‑first — it works the moment you install
+      it, with no account required — and offers an optional free account for people
+      who want backup, multi‑device sync, or to track a shared debt or pool with
+      someone else. This policy explains exactly what that means for your data.
+    </p>
+  </header>
 
+  <nav class="toc" aria-label="Table of contents">
+    <h2>On this page</h2>
+    <ol>
+      <li><a href="#overview">1. Overview</a></li>
+      <li><a href="#data">2. Data we collect</a></li>
+      <li><a href="#guest">3. Guest mode</a></li>
+      <li><a href="#use">4. How we use data</a></li>
+      <li><a href="#security">5. Storage &amp; security</a></li>
+      <li><a href="#sharing">6. Sharing with others</a></li>
+      <li><a href="#permissions">7. App permissions</a></li>
+      <li><a href="#rights">8. Your rights &amp; control</a></li>
+      <li><a href="#children">9. Children's privacy</a></li>
+      <li><a href="#changes">10. Changes to this policy</a></li>
+      <li><a href="#contact">11. Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">1</span>Overview</h2>
+    <p>
+      This policy covers the Spendio mobile app, published by A&amp;K Tech
+      ("we", "us"). It describes what information the app handles, where it is
+      stored, and the choices you have — in plain language, without legal filler.
+    </p>
+    <p>
+      The short version: everything you track stays on your device by default.
+      A few features that only make sense when another person is involved —
+      shared debts and money pools — need an account and a server to keep
+      both sides in sync, and those are entirely optional.
+    </p>
+  </section>
+
+  <section id="data">
+    <h2><span class="num">2</span>Data we collect</h2>
+    <p>What Spendio stores falls into three clearly separated groups.</p>
+    <div class="grid-cards">
+      <div class="card">
+        <h3><span class="dot local"></span>Always on your device only</h3>
+        <ul>
+          <li>Budgets &amp; category limits</li>
+          <li>Recurring transactions &amp; subscriptions</li>
+          <li>Tasks &amp; reminders</li>
+          <li>Theme, language &amp; currency settings</li>
+          <li>Local profile name/photo, if you skip account creation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="dot account"></span>Only if you create an account</h3>
+        <ul>
+          <li>Your email address</li>
+          <li>Your password — stored as a salted, one‑way hash; we cannot read it</li>
+          <li>A security question &amp; answer, for account recovery only</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="dot synced"></span>Only for features shared with another person</h3>
+        <ul>
+          <li>Transactions you add: amount, category, note, date, optional receipt photo</li>
+          <li>Debts you link to someone: their name, amount, due date, optional photo, repayment history</li>
+          <li>Money Pools: members, deposits, expenses and how they're split</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted" style="margin-top:14px;">
+      Data in the third group is stored on our server <strong>only</strong> so it can
+      correctly appear on both your device and the other participant's device — it is
+      never used for advertising, never sold, and never analyzed for any purpose
+      beyond making that feature work.
+    </p>
+  </section>
+
+  <section id="guest">
+    <h2><span class="num">3</span>Guest mode — fully offline, no account</h2>
+    <p>
+      You can use Spendio's core features — expenses, budgets, recurring bills,
+      analytics, tasks — without ever signing up. In this mode, nothing you enter
+      ever leaves your device: no server call, no account, no data collection of
+      any kind. Creating an account later is always your choice, never a requirement.
+    </p>
+  </section>
+
+  <section id="use">
+    <h2><span class="num">4</span>How we use data</h2>
+    <ul class="rights">
+      <li>To run the app's core features entirely on your device.</li>
+      <li>To sync your transactions, debts and money pools across your own devices, if you're signed in.</li>
+      <li>To let a debt or a money pool you share with someone else show correctly on both of your devices.</li>
+      <li>To verify your identity and let you recover your account if you forget your password.</li>
+      <li>To generate local reminders for budgets and recurring bills — these are created entirely on your device and never sent through our server.</li>
+    </ul>
+    <p class="muted">We do not use your data for advertising, profiling, or any purpose outside the features above.</p>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">5</span>Storage &amp; security</h2>
+    <ul class="rights">
+      <li>All data sent to our server travels over an encrypted HTTPS connection.</li>
+      <li>Passwords are never stored in plain text — only a salted, one‑way hash.</li>
+      <li>Your session token is stored in your device's secure, OS‑level storage, not in a plain settings file.</li>
+      <li>Receipt and photo attachments are compressed before upload to keep transfers small and fast.</li>
+      <li>You can lock the app itself with a local PIN or app‑lock, independent of your account password.</li>
+    </ul>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">6</span>Sharing with others</h2>
+    <p>
+      We don't run ads, embed ad SDKs, use marketing trackers, or sell your data
+      to anyone. The only "sharing" that happens is the kind you ask for directly:
+      when you link a debt to another Spendio user or invite someone into a
+      money pool, that specific person sees only the information that feature
+      needs them to see — nothing else about you or your other data.
+    </p>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="num">7</span>App permissions</h2>
+    <p>Each permission exists for one specific feature, explained here:</p>
+    <div class="perm-wrap">
+      <table class="perm">
+        <thead><tr><th>Permission</th><th>Why Spendio asks for it</th></tr></thead>
+        <tbody>
+          <tr><td>Internet / network</td><td>Only used when you sign in, to sync transactions, debts and money pools — never for ads or tracking.</td></tr>
+          <tr><td>Notifications</td><td>Local alerts for budgets and recurring bills, generated on your device.</td></tr>
+          <tr><td>Camera / photo gallery</td><td>Optional — attach a receipt photo to a transaction, a photo to a debt, or set a profile picture.</td></tr>
+          <tr><td>Device storage</td><td>Only when you choose to export your data as a CSV or PDF file.</td></tr>
+          <tr><td>Receive boot completed</td><td>Restores your recurring‑bill and reminder schedule after your device restarts.</td></tr>
+          <tr><td>Wake lock</td><td>Lets the local background task that applies due recurring transactions finish running.</td></tr>
+          <tr><td>Vibrate</td><td>Haptic feedback for in‑app alerts.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">8</span>Your rights &amp; control</h2>
+    <ul class="rights">
+      <li>Edit or delete any transaction, debt, budget, or other entry at any time, directly in the app.</li>
+      <li>Permanently delete your account from Profile → Settings — this removes your synced transactions, debts and money pool data from our server.</li>
+      <li>Clear the app's local data or uninstall it to instantly remove everything stored only on your device.</li>
+      <li>Even without reinstalling the app, email us to request deletion of your account and its data — we complete these requests within 30 days.</li>
+    </ul>
+    <div class="callout">
+      Deleting your account removes your server‑side data. Local‑only data
+      (budgets, recurring bills, tasks) was never on our server in the first
+      place and is removed the moment you clear the app's data or uninstall it.
+    </div>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">9</span>Children's privacy</h2>
+    <p>
+      Spendio is not directed at children, and we do not knowingly collect
+      personal information from anyone under 13. If you believe a child has
+      provided us with personal information, contact us and we will delete it.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">10</span>Changes to this policy</h2>
+    <p>
+      If this policy changes, we'll update the date at the top of this page
+      and, for any meaningful change, note it here. Continuing to use Spendio
+      after an update means you accept the revised policy.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span>Contact us</h2>
+    <p>Questions about this policy or your data? Reach us at:</p>
+    <p style="font-weight:600;font-size:16px;">ayubkhn.aks@gmail.com</p>
+    <a class="backtop" href="#overview">↑ Back to top</a>
+  </section>
+
+  <footer>
+    <span>© 2026 A&amp;K Tech · Spendio · All rights reserved.</span>
+    <a href="mailto:ayubkhn.aks@gmail.com">ayubkhn.aks@gmail.com</a>
+  </footer>
+
+</div>
 </body>
 </html>
